@@ -23,4 +23,14 @@ public class StudentService {
 		return student_repo.save(s);
 		
 	}
+	
+	public void deleteStudent(int id) {
+		student_repo.deleteById(id);
+	}
+	
+	public Student updateStudent(Student s) {
+		student_repo.save(s);
+		return s;
+	}
+	
 }
